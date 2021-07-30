@@ -6,10 +6,10 @@
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav mr-auto d-flex align-items-center">
       <li class="nav-item active">
-        <img src="https://scontent.fcgh23-1.fna.fbcdn.net/v/t1.6435-9/73170989_2071616559605550_5963586348471287808_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=b5klHNHR6B8AX-SWwdZ&_nc_ht=scontent.fcgh23-1.fna&oh=254f6132a5ae8baffec626fe3e20995d&oe=612630DF" alt="foto do usuario" width="50px" height="50px" class="img-fluid rounded-circle">
+        <img src="{{foto}}" alt="foto do usuario" width="50px" height="50px" class="img-fluid rounded-circle">
       </li>
       <li class="nav-item pl-3">
-        <p class="m-0 font-weight-bold text-white fs-16">Nome do usuário(a)</p>
+        <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
       </li>
       <li class="nav-item pl-3">
         <a href="">
@@ -22,7 +22,7 @@
     <ul class="navbar-nav ml-auto d-flex align-items-center">
       <li class="nav-item pl-3">
         <a href="">
-          <p class="m-0 font-weight-bold text-white fs-16">sair
+          <p (click)='sair()' class="m-0 font-weight-bold text-white fs-16">sair
             <i class="fa fa-sign-out" aria-hidden="true"></i>
           </p>
         </a>
