@@ -26,6 +26,10 @@
             <input [(ngModel)]="user.senha" class="form-control" type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha">
           </div>
           <div class="form-group">
+            <label for="idade">Data de Nascimento</label>
+            <input [(ngModel)]='user.dataNascimento' class="form-control" type="date" name="idade" id="idade" placeholder="Sua data de nascimento">
+          </div>
+          <div class="form-group">
             <label for="tipo">Tipo de usuário</label>
             <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
               <option>Selecione um tipo de usuário</option>
